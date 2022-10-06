@@ -1,9 +1,0 @@
-%Base de conocimiento de la lógica proposicional
-%Hecho por Philip
-%
-
-negacion(v,f).
-negacion(f,v).
-
-disyuncion(v,_,v).
-disyuncion(f,X,X).
