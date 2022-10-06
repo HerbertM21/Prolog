@@ -1,0 +1,11 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%            HERBERT MAYORGA                %
+% LOGICA PARA LA CIENCIAS DE LA COMPUTACION.%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Base De conocimiento juego de dados.
+
+dados:-write('Ingresa un número entre 3 y 18'), nl,
+    write('Número: '), read(A),
+    (A > 18; A < 3 -> write('ERROR. Es un número entre 3 y 18')),
+    nl, B is (random(2)+random(2)+random(2)), nl, A=:=B.

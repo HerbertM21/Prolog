@@ -1,0 +1,11 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      HERBERT MAYORGA      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Base de conocimiento - Año bisiesto.
+
+bisiesto:-write('Escribe el año: '),
+    read(A), nl, (A mod 4 =:= 0 ->
+                 write('El año es bisiesto.')).
+
+
