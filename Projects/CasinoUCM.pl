@@ -1,9 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BASE DE CONOCIMIENTO CALORIAS Y TIPO DE MENU %
 % - HERBERT MAYORGA                            %
-% - GABRIEL LEIVA                              %
-% - BENJAMIN POBLETE                           %
-% - JEAN LOZANO                                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
