@@ -1,9 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BASE DE CONOCIMIENTO CALCULADORA ARITMETICA %
 % - HERBERT MAYORGA                           %
-% - GABRIEL LEIVA                             %
-% - BENJAMIN POBLETE                          %
-% - JEAN LOZANO                               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % ==== MENU INICIO ====
@@ -23,18 +20,18 @@ menu:-
 
 % ==== ENTRADA NUMEROS ====
 numeros(OPCION):-
-    OPCION == 5, write('Ingrese el número base: '), read(X), nl,
+    OPCION == 5, write('Ingrese el nÃºmero base: '), read(X), nl,
     write('Ingrese el exponente: '), read(Y), nl, salida(OPCION, X, Y);
 
-    OPCION == 6, write('Ingrese el número: '), read(X), nl, salida(OPCION, X, _);
+    OPCION == 6, write('Ingrese el nÃºmero: '), read(X), nl, salida(OPCION, X, _);
 
-    OPCION == 7, write('Ingrese el número: '), read(X), nl, salida(OPCION, X, _);
+    OPCION == 7, write('Ingrese el nÃºmero: '), read(X), nl, salida(OPCION, X, _);
 
-    OPCION > 8, write('Ingrese una opción valida'), nl, menu, nl;
+    OPCION > 8, write('Ingrese una opciÃ³n valida'), nl, menu, nl;
 
-    write('Ingrese el primer número: '),
+    write('Ingrese el primer nÃºmero: '),
     read(X), nl,
-    write('Ingrese el segundo número: '),
+    write('Ingrese el segundo nÃºmero: '),
     read(Y), nl, salida(OPCION, X, Y).
 
 % ==== OPERACIONES MATEMATICAS ====
@@ -51,7 +48,7 @@ resto(X, Y, Z):- Z is X mod Y.
 salida(1, X, Y) :- suma(X, Y, Z), write("- SUMA: "), display(Z), nl.
 salida(2, X, Y) :- resta(X, Y, Z),write("- RESTA: "), display(Z) , nl.
 salida(3, X, Y) :- multiplicacion(X, Y, Z),write("- MULTIPLICACION: "), display(Z), nl.
-salida(4, _, 0) :- write("!SYNTAX ERROR¡ DIVISIÓN POR 0"), nl.
+salida(4, _, 0) :- write("!SYNTAX ERRORÂ¡ DIVISIÃ“N POR 0"), nl.
 salida(4, X, Y) :- division(X, Y, Z),write("- DIVISION: "), display(Z) , nl.
 salida(5, X, Y) :- potencia(X, Y, Z),write("- POTENCIA: "), display(Z), nl.
 salida(6, X, _) :- logaritmoNatural(X, Z),write("- LOGARITMO: "), display(Z), nl.
